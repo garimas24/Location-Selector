@@ -46,7 +46,9 @@ function LocationSelector() {
   const handleCityChange = (e) => {
     const city = e.target.value;
     setSelectedCity(city);
-    setMessage(`You Selected ${city}, ${selectedState}, ${selectedCountry}`);
+    const newMessage = `You Selected ${city}, ${selectedState}, ${selectedCountry}`;
+    setMessage(newMessage);
+    console.log(newMessage); // Debugging log
   };
 
   return (
